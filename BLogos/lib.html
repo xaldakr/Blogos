@@ -1,0 +1,114 @@
+<!doctype html5>
+<html lang="es">
+<head>
+<title>Blogos
+</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="bulm/css/bulma.min.css"> 
+	<link rel="stylesheet" href="css/estilos.css">
+	<script src="js/jquery-1.12.3.js"></script>
+	<script src="js/jquery-1.12.3.min.js"></script>
+	<style  type="text/css">
+html,body { 
+  overflow:hidden; 
+}
+</style>
+</head>
+
+<body id="top" bgcolor="#ffffff" >
+	<section class="jumbotron"id="libros">
+		<div class="slideshow-container">
+		<div class="mySlides fade">
+			<div class="numbertext">1 / 3</div>
+			<center><img class="is256x256" src="imgs/chf.jpg" style="width:100%" alt="Cancion de Hielo y Fuego">
+			<div class="text"><p>Libro acerca de las guerras entre varios bandos, saliendose de los esquemas típicos de las novelas caballerescas, enfocansose en temas reales y con drama aumentado </p></div>
+		</div>
+		</div><div class="mySlides fade">
+			<div class="numbertext">2 / 3</div>
+			<center><img class="is256x256" src="imgs/di.jpg" style="width:100%" alt="Mobby Dick">
+			<div class="text"><p>Un libro Clásico hacerca de las aventuras de un cápitan de una tripulacion cuando intenta cazar a una ballena legendaria. </p></div>
+		</div>
+		</div><div class="mySlides fade">
+			<div class="numbertext">3 / 3</div>
+			<center><img class="is256x256" src="imgs/dq.jpg" style="width:100%" alt="Don Quijote de la mancha">
+			<div class="text"><p>Las aventuras de un viejo loco y su amigo gordo a traves de su imaginacion y unas tierras bastas de peligros que los pondrán a prueba </p></div>
+
+		</div>
+	</div>
+	</section>
+	
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script type="text/javascript">
+
+var urls= [ 'quienes.html', 'valores.html', 'mis.html', 'lib.html', 'pg.html', 'app.html', 'https://www.amazon.es/Don-Quijote-Mancha-Miguel-Cervantes-ebook/dp/B01GT03OP2', 'https://www.amazon.com/Moby-Dick-Thrift-Editions-Herman-Melville/dp/0486432157', 'https://es.wikipedia.org/wiki/Wikipedia_en_espa%C3%B1ol', 'https://www.torproject.org/', 'https://rotopo.com/', 'https://www.krunker.io' ];
+// Escoger una al azar
+var url = urls[Math.floor(Math.random()*urls.length)];
+// Asignarlo al boton
+document.getElementById('enlace_aleatorio').href = url;
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#hide").on('click', function() {
+        $("#element1").hide();
+        return false;
+    });
+ 
+    $("#show").on('click', function() {
+        $("#element1").show();
+        return false;
+    });
+});
+$(document).ready(function(){
+    $("#hide2").on('click', function() {
+        $("#element2").hide();
+        return false;
+    });
+ 
+    $("#show2").on('click', function() {
+        $("#element2").show();
+        return false;
+    });
+});
+$(document).ready(function(){
+    $("#hide3").on('click', function() {
+        $("#element3").hide();
+        return false;
+    });
+ 
+    $("#show3").on('click', function() {
+        $("#element3").show();
+        return false;
+    });
+});
+$(document).ready(function(){
+	$(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+	event.preventDefault();
+	var hash = this.hash;
+	$('html, body').animate({
+		scrollTop: $(hash).offset().top
+	}, 1000, function(){
+		window.location.hash = hash;
+		});
+	});
+	})
+	var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+       var i;
+       var slides = document.getElementsByClassName("mySlides");
+       for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+       }
+       slideIndex++;
+       if(slideIndex > slides.length) {slideIndex = 1}
+       slides[slideIndex-1].style.display = "block";
+       setTimeout(showSlides,3000);
+}
+
+</script>
+
+</body>
+</html>

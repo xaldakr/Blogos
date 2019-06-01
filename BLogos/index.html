@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="es">
+<head>
+<title>Blogos
+</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="bulm/css/bulma.min.css"> 
+	<link rel="stylesheet" href="css/estilos.css">
+	<script src="js/jquery-1.12.3.js"></script>
+	<script src="js/jquery-1.12.3.min.js"></script>
+</head>
+
+<body id="top" background="imgs/fon.jpg" onload="aleatorio()" data-spy="scroll" data-target="aside" data-offset="60" >
+<link rel="icon" href="imgs/log.png" type="image/png">
+<aside class="col-sm-4 navbar navbar-nav menu sidebar" id="sidebar">
+		<div class="container">
+		<div>
+			<p class="menu-label">
+				Menu
+			</p>
+			<ul class="menu-list">
+				<li><a href="#inicio">Inicio</a></li>
+				<li><a href="#who" id="show"><i class="fa fa-eye"></i>Quienes somos</a></li>
+				<li><a href="#val" id="show2"><i class="fa fa-eye"></i>Valores</a></li>
+				<li><a href="#mis" id="show3"><i class="fa fa-eye"></i>Misión y Visión</a></li>
+			
+
+			</ul>
+			<p class="menu-label">
+				Investiga
+			</p>
+			<ul class="menu-list">
+				<li><a href="#libros" id="show4"><i class="fa fa-eye"></i>Libros</a></li>
+				<li><a href="#paginas" id="show5"><i class="fa fa-eye"></i>Páginas</a></li>
+				<li><a href="#games" id="show6">Games</a></li>
+			</ul>
+		</div>
+		<div class="content col-sm-1">
+			<button class="button is-dark is-square" onclick="document.getElementsByClassName('sidebar')[0].classList.toggle('collapsed')">
+			<img class="image is-16x16" src="imgs/bw.png" alt="Menu" >
+			</button>
+		</div>
+		</div>
+</aside>
+<header class="jumbotron hero is.large" id="inicio">
+	<center>
+		<img src="imgs/blor.png" alt="The blog of the knowledge">
+		<h6 class="title is-6">Beyond your time</h6>
+</header>
+
+	
+	<section class="bg-black">
+	<h4 class="title is-4" align="center"> Bienvenidos al Portal de Blogos, una red en la cual usted podra encontrar diversos aspectos en cuanto a informacion y entretenimiento.</h4>
+	<h4 class="title is-4" align="center"> Si crees que esto no es útil, puedes visitar...</h4>
+		 <iframe class="embed-responsive-item" src="index.html" frameborder="0" allowfullscreen width="100%" height="30ppx"></iframe>
+		 <h4 class="title is-4" align="center"> Esperabas algo mas? Pues no tengo dinero para pagar el Copyright</h4>
+	</section>
+	<section class="bg-black" id="who">
+	<div id="element1" style="display: none;"> 
+        
+		<h2 class="title is-2" align="center"> Quienes somos </h2>
+	
+			<h5 class="title is-5" align="justify"> Somos una página la cual se encarga de transmitir informacion de manera más directa y rápida que de lo habitual, entregando la informacoón de manera rápida y facil, facilitando la búsqueda de informacón, este lugar se estará actualizando constantemente para así poder entregar una mejor calidad y servicios.<br> Estamos conformados por una sola persona actualmente, la cual no quiere aportar mucha información personal.</h5>
+			<br>
+			<div id="close"><a  href="#element1" id="hide" title="Cerrar"><i class="fa fa-close"><img align="center"src="imgs/blb.png" alt="Blogos"></i></a></div>
+		<hr>
+		</div>
+	</div>
+	</section>
+	<section class="bg-black" id="val">
+		<div id="element2" style="display: none;"> 
+    
+				<h1 class="title is-1" align="center"> Nuestros Valores </h1>
+				<ul type="circle">
+				<li><h3 class="title is-3" align="center"> Integridad </h3></li>
+					<br>
+				<li><h3 class="title is-3" align="center"> Veracidad </h3></li>
+					<br>
+				<li><h3 class="title is-3" align="center"> Responsabilidad </h3></li>
+				<br>
+				<div id="close"><a href="#element2" id="hide2" title="Cerrar"><i class="fa fa-close"><img align="center"src="imgs/blb.png" alt="Blogos"> </i></a></div>
+				<hr>
+		</div>
+	</section>
+	<section class="bg-black" id="mis">
+		<div id="element3" style="display: none;"> 
+    
+						<h2 class="title is-2" align="center">Mision </h2>
+		<h3 class="title is-3" align="justify"> Ser una página la cual brinda información de manera verás y concreta, a fin de facilitar la búsqueda de información para los usuarios, además de ser una página accesible para todos.</h3>
+		<h2 class="title is-2" align="center">Visión </h2>
+		<h3 class="title is-3" align="justify"> Ser la mayor página en la búsqueda de datos, ya sea enciclopedicos, pedagógicos, bibliográficos, etc.
+				<div id="close"><a href="#element3" id="hide3" title="Cerrar"><i class="fa fa-close"><img align="center"src="imgs/blb.png" alt="Blogos"> </i></a></div>
+				<hr>
+		</div>
+	</section>
+	<section class="jumbotron">
+	 
+			<h2 class="title is-2" align="center">Investiga</h2>
+			<h3 class="title is-3" align="center">Busca información de libros, páginas web, juegos, y mucho mas...</h3>
+	</section>
+	<section class="jumbotron"id="libros">
+		<div id="element4" style="display: none;">
+			<h2 class="title is-2" align="center">Libros </h2>
+			<div id="idToHover"><h3 class="title is-3" align="center">Tus libros preferidos los encontraras aquí... </h3></div>
+				<div id="idModal">
+					<iframe  src="lib.html" width="110%" style="border:none;height:100%;width:300px;"></iframe>
+			</div>
+			<div id="close"><a href="#element4" id="hide4" title="Cerrar"><i class="fa fa-close"><img align="center"src="imgs/blb.png" alt="Blogos"> </i></a></div>
+				<hr>
+		</div>
+	<section class="is-dark"id="paginas">
+	<div id="element5" style="display: none;">
+		<h2 class="title is-2" align="center">Páginas </h2>
+		<h3 class="title is-3" align="center">Las páginas web más útiles</h3>
+		<div id="idModal">
+				 <iframe  src="pg.html" width="110%" style="border:none;height:100%;width:300px;"></iframe>
+				 
+		</div>
+		<div id="close"><a href="#element5" id="hide5" title="Cerrar"><i class="fa fa-close"><img align="center"src="imgs/blb.png" alt="Blogos"> </i></a></div>
+				<hr>
+	</section>
+	<section class="is-dark" id="games">
+	<div id="element6" style="display: none;">
+		<h2 class="title is-2" align="center">Juegos </h2>
+		<h3 class="title is-3" align="center">Juegos entretenidos para pasar el rato</h3>
+		<div id="idModal">
+				 <iframe  src="app.html" width="110%" style="border:none;height:100%;width:300px;"></iframe>
+				 
+		</div>
+		<div id="close"><a href="#element6" id="hide6" title="Cerrar"><i class="fa fa-close"><img align="center"src="imgs/blb.png" alt="Blogos"> </i></a></div>
+				<hr>
+	</section>
+	<footer class="footer">
+	<h4 class="title is-4" align="center"> Página creada por ???, Publicada en 000webhost.com</h4>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<script type="text/javascript">
+
+var urls= [ 'quienes.html', 'valores.html', 'mis.html', 'lib.html', 'pg.html', 'app.html', 'https://www.amazon.es/Don-Quijote-Mancha-Miguel-Cervantes-ebook/dp/B01GT03OP2', 'https://www.amazon.com/Moby-Dick-Thrift-Editions-Herman-Melville/dp/0486432157', 'https://es.wikipedia.org/wiki/Wikipedia_en_espa%C3%B1ol', 'https://www.torproject.org/', 'https://rotopo.com/', 'https://www.krunker.io' ];
+// Escoger una al azar
+var url = urls[Math.floor(Math.random()*urls.length)];
+// Asignarlo al boton
+document.getElementById('enlace_aleatorio').href = url;
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $("#hide").on('click', function() {
+        $("#element1").hide();
+        return false;
+    });
+ 
+    $("#show").on('click', function() {
+        $("#element1").show();
+        return false;
+    });
+});
+$(document).ready(function(){
+    $("#hide2").on('click', function() {
+        $("#element2").hide();
+        return false;
+    });
+ 
+    $("#show2").on('click', function() {
+        $("#element2").show();
+        return false;
+    });
+});
+$(document).ready(function(){
+    $("#hide3").on('click', function() {
+        $("#element3").hide();
+        return false;
+    });
+ 
+    $("#show3").on('click', function() {
+        $("#element3").show();
+        return false;
+    });
+});
+$(document).ready(function(){
+    $("#hide4").on('click', function() {
+        $("#element4").hide();
+        return false;
+    });
+ 
+    $("#show4").on('click', function() {
+        $("#element4").show();
+        return false;
+    });
+});
+$(document).ready(function(){
+    $("#hide5").on('click', function() {
+        $("#element5").hide();
+        return false;
+    });
+ 
+    $("#show5").on('click', function() {
+        $("#element5").show();
+        return false;
+    });
+});
+$(document).ready(function(){
+    $("#hide6").on('click', function() {
+        $("#element6").hide();
+        return false;
+    });
+ 
+    $("#show6").on('click', function() {
+        $("#element6").show();
+        return false;
+    });
+});
+$(document).ready(function(){
+	$(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+	event.preventDefault();
+	var hash = this.hash;
+	$('html, body').animate({
+		scrollTop: $(hash).offset().top
+	}, 1000, function(){
+		window.location.hash = hash;
+		});
+	});
+	})
+
+</script>
+
+</body>
+</html>
